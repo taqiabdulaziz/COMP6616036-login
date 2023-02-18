@@ -1,0 +1,5 @@
+export const hasCapital = (password) => /[A-Z]/.test(password) || 'Password must have one capital letter'
+export const hasLowercase = (password) => /[a-z]/.test(password) || 'Password must have one lowercase letter'
+export const hasDigit = (password) => /[0-9]/.test(password) || 'Password must have digit'
+export const hasSymbol = (password) => /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password) || 'Password must have a symbol'
+export const hasSufficientLength = (password) => password.length > 8 || 'Password must have minimal 8 character'
